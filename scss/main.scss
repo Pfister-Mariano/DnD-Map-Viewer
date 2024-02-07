@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /***** @import *****/
 
 @import './resets';
@@ -133,4 +134,141 @@ main {
     }
 }
 
+=======
+/***** @import *****/
+
+@import './resets';
+
+
+
+/***** $variable *****/
+
+// $primary-color: #222;
+// $font-weight: (
+//     regular: 400,
+//     medium: 500,
+//     bold: 800
+// );
+
+// $mobile: 800px;
+
+/***** @function *****/
+
+// @function weight($weight-name) {
+//     @return map-get($font-weight, $weight-name);
+// }
+
+
+
+/***** @mixin *****/
+
+// @mixin flexCenter($direction, $center: true) {
+//     display: flex;
+//     align-items: center;
+//     flex-direction: $direction;
+// 		@if $center{
+// 				justify-content: center;
+// 		}
+// }
+
+// @mixin mobile {
+//     @media ( max-width: $mobile){
+//         @content;
+//     }
+// }
+
+/***** nested CSS *****/
+* {
+  position: relative;
+}
+
+body {
+  overflow: visible;
+}
+
+.enemy{
+  z-index: 70;
+  position: absolute;
+  top: 100px;
+  left: 500px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.character {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 500;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+
+  overflow: hidden;
+
+  background-color: green;
+
+  cursor: move;
+
+  img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+article{  
+  img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.button-group {
+  z-index: 300;
+  display: flex;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+canvas{
+  pointer-events: none;
+  z-index: 2;
+  position: absolute;
+  top     : 0px;
+  left    : 0px;
+  z-index : 100;
+}
+
+img {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*
+main {
+    @include flexCenter(row, $center: true);
+
+    width: 70%;
+    margin: 0 auto;
+
+    .#{&}-p {
+        font-weight: map-get($map: $font-weight, $key: bold);
+
+        &:hover {
+            color: pink;
+        }
+    }
+
+    @include mobile{
+        width: 10%;
+    }
+}
+
+>>>>>>> master
 */
